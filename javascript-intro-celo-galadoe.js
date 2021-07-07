@@ -45,4 +45,17 @@ console.log(!3 === 3)
 // 15
 console.log("LEARN".length === 5 && "Student".length === 7)
 
-//
+// 16
+console.log("LEARN".length === 5 || "Student".length === 10);
+
+// 17
+console.log("LEARN".includes("RN"));
+
+// 18
+console.log("LEARN".includes("rn"));
+
+// 19
+console.log("LEARN"[0] === "l");
+
+// 20
+console.log("LEARN"[0] === "L");
