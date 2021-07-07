@@ -20,6 +20,11 @@ console.log ("mytrey".indexOf("e"))
 console.log("mytrey"[0])
 // Write the code that will log the string in all uppercase letters.
 console.log("mytodd".toUpperCase())
+console.log ("trey".indexOf("e"))
+// Write the code that will log the character at the first index of the string.
+console.log("todd"[0])
+// Write the code that will log the string in all uppercase letters.
+console.log("trey".toUpperCase())
 // Write the code that will log true or false for the following:
 
 // Is 34 divided by 3 greater than 67 divided by 2?
