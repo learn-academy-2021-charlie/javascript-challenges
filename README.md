@@ -32,7 +32,7 @@ Use this command if you DO have the repository on your local machine but DON'T h
 
 ### Create a Branch
 Use this command if you need to create a branch that does not currently exist:  
-- `$ git checkout -b <topic-initial1-initial2> (ex. arrays-a-s)`
+- `$ git checkout -b <topic-initial1-initial2>` (ex. arrays-a-s)
 
 
 ### Moving to an Existing Local Branch
@@ -50,7 +50,7 @@ Use these commands if the repo you are working on has a branch but it is NOT on 
 
 
 ### Adding Local Code to GitHub
-Use these commands to add the code you have on your local machine to GitHub:
+Use these commands to add the code you have on your local machine to GitHub:  
 -` $ git status` (informational command, ensure you are on the correct branch and in the correct directory)
 - `$ git add .`
 - `$ git commit -m "meaningful message here"`
