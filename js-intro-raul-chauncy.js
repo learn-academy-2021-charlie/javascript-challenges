@@ -1,4 +1,6 @@
 // 1. Write the code that will log the outcome of 34 added to 71.
+console.log("1 - 10:")
+console.log("------------------------------------------------")
 console.log(34 + 71);
 
 // 2.Write the code that will log the outcome of 67 subtracted from 123.
@@ -32,7 +34,9 @@ console.log("Chauncy"[0]);
 
 // 10. Write the code that will log the string in all uppercase letters.
 console.log("Chauncy".toUpperCase());
-
+console.log("----------------------------------------------")
+console.log("11 - 20:")
+console.log("------------------------------------------------")
 // 11. Is 34 divided by 3 greater than 67 divided by 2?
 console.log(34/3 > 67/2)
 
@@ -62,3 +66,34 @@ console.log("LEARN"[0] === "l")
 
 // 20. Modify the code from the previous question to return true.
 console.log("LEARN"[0] === "L")
+console.log("------------------------------------------------")
+
+console.log("21 - 27:")
+console.log("------------------------------------------------")
+//Consider the variables:
+var theQuestion = "life, the universe, and everything"
+var theAnswer = 42
+
+// 21. Write the code that will log theAnswer divided by 2.
+console.log(theAnswer / 2);
+
+// 22. Write the code that will log the length of theQuestion.
+console.log(theQuestion.length);
+
+// 23. Write the code that will log the index of the character "f" in the theQuestion.
+console.log(theQuestion.indexOf("f"));
+
+// 24. Write the code that will log the concatenation of the two variables.
+console.log(theQuestion + theAnswer);
+
+// 25. Write the code that will log "the universe".
+console.log(theQuestion.slice(6, 18));
+
+// 26. Write the code that will log the character "l" from theQuestion.
+console.log(theQuestion.slice(0, 1));
+console.log(theQuestion.charAt("0"));
+console.log(theQuestion[0]);
+
+// 27. Write the code that will log whether theQuestion.length is greater that theAnswer.
+console.log(theQuestion.length > theAnswer);
+console.log("------------------------------------------------")
