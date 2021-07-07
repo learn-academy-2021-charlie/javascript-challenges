@@ -59,3 +59,21 @@ console.log("LEARN"[0] === "l");
 
 // 20
 console.log("LEARN"[0] === "L");
+
+var theQuestion = "life, the universe, and everything"
+var theAnswer = 42
+
+// 21
+console.log(theAnswer / 2)
+
+// 22
+console.log(theQuestion.length)
+
+// 23
+console.log(theQuestion.indexOf("f"))
+
+// 24 --- maybe type coersion is converting theAnswer data type from a number into a string
+console.log(theQuestion + theAnswer)
+
+// 25
+console.log(theQuestion.slice(6, 18))
