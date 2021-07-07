@@ -78,3 +78,8 @@ console.log(theQuestion + theAnswer)
 // 25
 console.log(theQuestion.slice(6, 18))
 
+// 26
+console.log(theQuestion[0]);
+
+// 27
+console.log(theQuestion.length > theAnswer);
