@@ -15,7 +15,7 @@ console.log(6 % 33)
 // Write the code that will log the length of a string containing your name.
 console.log("todd and trey".length)
 // Write the code that will log whether your string includes the letter "e"?
-console.log (mystring.indexOf("e"))
+console.log ((mystring.indexOf("e"))
 // Write the code that will log the character at the first index of the string.
 console.log(mystring[0])
 // Write the code that will log the string in all uppercase letters.
@@ -23,7 +23,7 @@ console.log(mystring.toUpperCase())
 // Write the code that will log true or false for the following:
 
 // Is 34 divided by 3 greater than 67 divided by 2?
-
+console.log((34 / 3) >(67 / 2))
 // Does 5 evaluate to the same as "5"?
 
 // Does 5 strictly equal "5"?
