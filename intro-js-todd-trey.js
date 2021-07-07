@@ -38,31 +38,32 @@ console.log(!3 === 3)
 // Does "LEARN".length strictly equal 5 AND "Student".length strictly equal 7?
 console.log("LEARN".length === 5 && "student".length === 7)
 // Does "LEARN".length strictly equal 5 OR "Student".length strictly equal 10?
-
+console.log("LEARN".length === 5 || "Student".length === 10)
 // Does "LEARN" contain the subset "RN"?
-
+  console.log("LEARN".indexOf("RN"))
 // Does "LEARN" contain the subset "rn"?
-
+console.log("LEARN".indexOf("rn"))
 // Does "LEARN"[0] strictly equal "l"?
-
+console.log("LEARN"[0] === "l")
 // Modify the code from the previous question to return true.
-
+console.log("LEARN"[0] === "L")
 // Consider the variables:
 
-// var theQuestion = "life, the universe, and everything"
+var theQuestion = "life, the universe, and everything"
 
-// var theAnswer = 42
+var theAnswer = 42
 
 // Write the code that will log theAnswer divided by 2.
-
+console.log(theAnswer / 2)
 // Write the code that will log the length of theQuestion.
-
+console.log(theQuestion.length)
 // Write the code that will log the index of the character "f" in the theQuestion.
-
+console.log(theQuestion.indexOf('e'))
 // Write the code that will log the concatenation of the two variables.
-
+console.log(theQuestion + " is " +theAnswer)
 // Write the code that will log "the universe".
-
+console.log(theQuestion.slice(6,18))
 // Write the code that will log the character "l" from theQuestion.
-
+console.log(theQuestion[0])
 // Write the code that will log whether theQuestion.length is greater that theAnswer
+console.log(theQuestion.length > theAnswer)
