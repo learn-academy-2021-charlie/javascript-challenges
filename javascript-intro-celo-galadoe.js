@@ -15,4 +15,17 @@ console.log(34+71)
  // 5
  console.log(5**7)
 
- 
+ // 6
+ console.log(33 % 6)
+
+// 7
+console.log("galadoe".length);
+
+// 8
+console.log("galadoe".includes("e"));
+
+// 9
+console.log("galadoe"[0]);
+
+// 10
+console.log("galadoe".toUpperCase());
