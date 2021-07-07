@@ -1,3 +1,7 @@
+var firstName = "Chauncy";
+var lrn = "LEARN";
+var std = "Student";
+
 // 1. Write the code that will log the outcome of 34 added to 71.
 console.log("1 - 10:")
 console.log("------------------------------------------------")
@@ -19,21 +23,19 @@ console.log(5 ** 7);
 console.log(33 % 6);
 
 // 7. Write the code that will log the length of a string containing your name.
-console.log("Chauncy".length);
+console.log(firstName.length);
 
 // 8. Write the code that will log whether your string includes the letter "e"?
-console.log("Chauncy".includes("e"));
+console.log(firstName.includes("e"));
 
 // 9. Write the code that will log the character at the first index of the string.
-console.log("Chauncy".charAt(0));
+console.log(firstName.charAt(0));
+console.log(firstName[0]);
 
-var name = "Chauncy";
-console.log(name[0]);
-
-console.log("Chauncy"[0]);
+console.log(firstName[0]);
 
 // 10. Write the code that will log the string in all uppercase letters.
-console.log("Chauncy".toUpperCase());
+console.log(firstName.toUpperCase());
 console.log("----------------------------------------------")
 console.log("11 - 20:")
 console.log("------------------------------------------------")
@@ -50,26 +52,27 @@ console.log(5 === "5")
 console.log(!3 === 3)
 
 // 15. Does "LEARN".length strictly equal 5 AND "Student".length strictly equal 7?
-console.log("LEARN".length === 5 && "Student".length === 7)
+console.log(lrn.length === 5 && std.length === 7)
 
 // 16. Does "LEARN".length strictly equal 5 OR "Student".length strictly equal 10?
-console.log("LEARN".length === 5 || "Student".length === 10)
+console.log(lrn.length === 5 || std.length === 10)
 
 // 17. Does "LEARN" contain the subset "RN"?
-console.log("LEARN".includes("RN"))
+console.log(lrn.includes("RN"))
 
 // 18. Does "LEARN" contain the subset "rn"?
-console.log("LEARN".includes("rn"))
+console.log(lrn.includes("rn"))
 
 // 19. Does "LEARN"[0] strictly equal "l"?
-console.log("LEARN"[0] === "l")
+console.log(lrn[0] === "l")
 
 // 20. Modify the code from the previous question to return true.
-console.log("LEARN"[0] === "L")
+console.log(lrn[0] === "L")
 console.log("------------------------------------------------")
 
 console.log("21 - 27:")
 console.log("------------------------------------------------")
+
 //Consider the variables:
 var theQuestion = "life, the universe, and everything"
 var theAnswer = 42
