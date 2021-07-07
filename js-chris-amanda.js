@@ -21,6 +21,14 @@
 // Does "LEARN"[0] strictly equal "l"?
 // Modify the code from the previous question to return true.
 
+// Write the code that will log theAnswer divided by 2.
+// Write the code that will log the length of theQuestion.
+// Write the code that will log the index of the character "f" in the theQuestion.
+// Write the code that will log the concatenation of the two variables.
+// Write the code that will log "the universe".
+// Write the code that will log the character "l" from theQuestion.
+// Write the code that will log whether theQuestion.length is greater that theAnswer.
+
 console.log(71+34)
 console.log(123-67)
 console.log(23*56)
@@ -43,3 +51,14 @@ console.log("LEARN".includes("RN"))
 console.log("LEARN".includes("rn"))
 console.log("LEARN"[0] === "l")
 console.log("LEARN"[0] === "L")
+
+var theQuestion = "life, the universe, and everything"
+var theAnswer = 42
+
+console.log(theAnswer/2)
+console.log(theQuestion.length)
+console.log(theQuestion.indexOf("f"))
+console.log(theQuestion + theAnswer)
+console.log(theQuestion.slice(6, 18))
+console.log(theQuestion.charAt(0))
+console.log(theQuestion.length > theAnswer)
