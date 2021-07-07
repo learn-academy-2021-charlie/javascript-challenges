@@ -62,3 +62,5 @@ console.log(theQuestion.slice(6,18))
 console.log(theQuestion.charAt(0))
 // Write the code that will log whether theQuestion.length is greater that theAnswer.
 console.log(theQuestion.length > theAnswer)
+
+console.log(theQuestion.slice(-10))
