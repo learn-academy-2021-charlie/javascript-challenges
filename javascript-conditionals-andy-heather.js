@@ -82,4 +82,7 @@ if(password.length >= 12 && password.includes("!")){
   console.log("That is a mighty strong password!")
 }else if(password.length >= 8 || password.includes("!")){
   console.log("That password is strong enough.")
-}else {console.log("That is not a valid password.")}
+}else {console.log("That is not a valid password.")};
+
+ var colorarray = ["blue", "green", "yellow", "pink", ]
+ console.log(colorarray .indexof([3]))
