@@ -35,12 +35,40 @@ if (trafficLight == 'green') {
 }
 
 // Write an if/else statement that takes two variables of numbers and outputs the larger number, or logs equal if the numbers are the same.
-
+var number1 = 9
+var number2 = 1222222
+if(number1 > number2){
+    console.log(number1)
+}else if(number1 < number2){
+    console.log(number2)
+}else{
+    console.log("They are equal")
+}
+    
 // Write an if/else statement that takes a variable of a number and logs whether the number is odd, even, or zero.
+var number= 0
+if(number == 0){
+    console.log("This number is zero")
+}else if(number % 2 == 0){
+    console.log("This number is even")
+}else{
+    console.log("This number is odd")
+}
 
 // STRETCH Challenges
-
-// Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
+// Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, 
+//if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
+var grade = 60
+if(grade < 60){
+    console.log("You got F")
+}else if(grade >= 60 && grade < 70){
+    console.log("You got D")
+}else if(grade >=70 && grade < 80){
+    console.log("You got C")
+}else if(grade >=80 && grade < 90){
+    console.log("You got B")
+}else{
+    console.log("You got A")}
 
 // Write an if/else statement that takes a variable of a boolean, number, or string datatype and logs the data type of the variable HINT: use the JS operator typeof.
 
