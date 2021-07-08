@@ -59,22 +59,28 @@ console.log(numSet[3])
 
 // Consider the variable:
 
-// var characters = ["y", "a", "r", "r", "a"]
+var characters = ["y", "a", "r", "r", "a"]
 // Write the code that brings all the letters in the characters array together into a string.
-
+console.log(characters.join(""))
 // Write the code that reverses the order of the letters in the characters array and saves it into a variable called charsReversed.
-
+var charsReversed = characters.reverse()
+console.log(charsReversed)
 // Write the code that brings all the letters in the charsReversed array together into a string with an asterisk between each letter.
-
+console.log(charsReversed.join("*"))
 // Write the code that brings all the letters in the charsReversed array together into a string without separators.
-
+console.log(charsReversed.join(""))
 // Create two arrays consisting of three first names of your cohort members in each.
-
+let array1 = ["Austin", "Charles","Brian"]
+let array2 = [ "Heather", "Jake","Chauncy"]
 // Write the code that sorts the names in alphabetical order.
-
+console.log(array1.sort())
+console.log(array2.sort())
 // Write the code that sorts the names in reverse alphabetical order.
-
+console.log(array1.reverse(array1.sort()))
+console.log(array2.sort().reverse())
 // Write the code that sorts all the names in alphabetical order in a single array.
+console.log((array1.concat(array2)).sort())
+
 
 // Consider the variables:
 
