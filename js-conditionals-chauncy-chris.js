@@ -3,12 +3,14 @@
 // 1. Write an if/else statement that takes a variable of item and logs "in budget" if a price is $100 or less.
 console.log("Problem 1:")
 var item = 500;
+var inBudget = "in budget";
+var notInBudget = "not in budget";
 
 if(item <= 100){
-    console.log("in budget");
+    console.log(inBudget);
 }
 else{
-    console.log("not in budget");
+    console.log(notInBudget);
 }
 
 console.log("-----------------------------------------------------")
@@ -71,33 +73,40 @@ console.log("-----------------------------------------------------")
 
 
 // 6. Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
+console.log("Problem 6:")
 
-var gradePercent = 100
+var gradePercent = 90;
+var gradeA = "A";
+var gradeB = "B";
+var gradeC = "C";
+var gradeD = "D";
+var gradeF = "F";
 
 if(gradePercent === 100){
     console.log("perfect score")
 }
 else if(gradePercent >= 90 && gradePercent <= 99){
-    console.log("A")
+    console.log(gradeA);
 }
 else if(gradePercent >= 80 && gradePercent <= 89){
-    console.log("B")
+    console.log(gradeB)
 }
 else if(gradePercent >= 70 && gradePercent <= 79){
-    console.log("C")
+    console.log(gradeC)
 }
 else if(gradePercent >= 60 && gradePercent <= 69){
-    console.log("D")
+    console.log(gradeD)
 }
 else if(gradePercent <= 59 && gradePercent > 0){
-    console.log("F")
+    console.log(gradeF)
 }
 else {
     console.log("no grade available")
 }
+console.log("-----------------------------------------------------")
 
 // 7. Write an if/else statement that takes a variable of a boolean, number, or string datatype and logs the data type of the variable HINT: use the JS operator typeof.
-
+console.log("Problem 7:")
 var dataType = "hello"
 
 if(typeof dataType === 'number'){
@@ -109,6 +118,7 @@ else if(typeof dataType === 'boolean'){
 else {
     console.log("string")
 }
+console.log("-----------------------------------------------------")
 
 // 8. Create a password checker using a single if/else statement. If a user inputs a password with 12 or more characters AND the password includes !, then log "That is a mighty strong password!" If the user’s password is 8 or more characters OR includes !, then log "That password is strong enough." Log "That is not a valid password." for every other input.
 
@@ -123,3 +133,4 @@ else if(password.length >= 8 || password.includes("!")){
 else{
     console.log("That is not a valid password")
 }
+console.log("-----------------------------------------------------")
