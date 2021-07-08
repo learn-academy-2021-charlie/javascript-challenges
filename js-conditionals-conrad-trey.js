@@ -83,3 +83,13 @@
 // }else{
 
 // }
+
+var pass = "setofnumbers!"
+
+if (pass.length === 12 && pass.contains('!') === true) {
+    console.log("This is a mighty strong password!")
+}else if (pass.length === 8 || pass.contains('!') === true){
+    console.log("that password is strong enough")
+}else if (pass.length < 8 || pass.contains('!') === false){
+    console.log("that is not a valid password")
+}
