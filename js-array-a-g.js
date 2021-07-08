@@ -24,3 +24,32 @@ console.log(groceryList);
 
 
 // 5
+var numbers = [2,4,6,8,10]
+numbers.unshift(0)
+console.log(numbers)
+
+
+// 6
+numbers.push(12)
+console.log(numbers)
+
+
+// 7
+numbers.shift(0)
+console.log(numbers)
+
+// 8
+var numbers2 = [0]
+console.log(numbers2.concat(numbers))
+
+// 9
+var numSet = [2,13,6,8,4,2]
+console.log(numSet.indexOf(2))
+
+// 10
+console.log(numSet.lastIndexOf(2))
+
+// 11
+console.log(numSet[3])
+
+// 12
