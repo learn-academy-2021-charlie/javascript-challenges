@@ -52,3 +52,34 @@
 // } else {
 //     console.log("odd")
 // }
+
+// var grade = -1
+
+// if (grade >= 100) {
+//     console.log("Perfect score")
+// }else if (grade >= 90 && grade < 100){
+//     console.log("A")
+// }else if (grade >= 80 && grade < 90){
+//     console.log("B")
+// }else if (grade >= 70 && grade < 80){
+//     console.log("C")
+// }else if (grade >= 60 && grade < 70){
+//     console.log("D")
+// }else if (grade >= 50 && grade < 60){
+//     console.log("F")
+// }else if (grade === 0) {
+//     console.log("no grade available")
+// }else{
+//}
+
+// var test = true
+// if (typeof test === 'string'){
+//     console.log("i am a string")
+
+// }else if(typeof test === 'number'){
+//     console.log("i am a number")    
+// }else if(typeof test === 'boolean'){
+//     console.log("i am a boolean and this is true or false.")
+// }else{
+
+// }
