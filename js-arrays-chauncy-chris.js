@@ -41,15 +41,3 @@ var newNumbers = [0];
 newNumbers = newNumbers.concat(numbers);
 
 console.log(newNumbers);
-
-var numSet = [2, 13, 6, 8, 4, 2]
-
-// Write the code that finds the index of the first appearance of the number 2.
-console.log(numSet.indexOf(2))
-
-// Write the code that finds the index of the last appearance of the number 2.
-console.log(numSet.lastIndexOf(2))
-
-// Write the code that returns the number at the third index.
-console.log(numSet[3])
-
