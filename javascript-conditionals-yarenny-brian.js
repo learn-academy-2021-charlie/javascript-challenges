@@ -14,3 +14,14 @@
 // }
 
 // Write an if/else statement that takes a variable of trafficLight and logs "go" if the light is green, "slow down" if the light is yellow and "stop" if the light is red.
+
+var trafficLight = "green"
+if(trafficLight === "green") {
+    console.log("go");
+} 
+else if (trafficLight === "yellow"){
+    console.log("slow down");
+
+} else if (trafficLight === "red"){
+    console.log("stop");
+} 
