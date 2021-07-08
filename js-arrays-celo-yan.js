@@ -84,8 +84,10 @@ console.log((array1.concat(array2)).sort())
 
 // Consider the variables:
 
-// var numbers = [42, 221, 71, 7, 18, 87]
-// var oddIndexes = []
+var numbers = [42, 221, 71, 7, 18, 87]
+var oddIndexes = []
 // Write the code that logs the values from the numbers array that are at odd indexes.
+
+// console.log()
 
 // Write the code that adds the values from odd indexes into the oddIndexes array.
