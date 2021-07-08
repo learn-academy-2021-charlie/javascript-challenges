@@ -18,3 +18,16 @@ console.log(!3)
 console.log("learn".length === 5 && "student".length === 7)
 console.log("learn".length === 5 || "student".length === 10)
 
+console.log("LEARN".includes("RN"));
+console.log("LEARN".includes("rn"));
+console.log("LEARN"[0]==="1")
+console.log("LEARN"[0]==="L");
+var theQuestion = "life, the universe, and everything "
+var theAnswer = "42"
+console.log(theAnswer / 2);
+console.log(theQuestion.length);
+console.log(theQuestion.indexOf("f"))
+console.log(theQuestion + theAnswer)
+console.log(theQuestion.indexOf("u"))
+console.log(theQuestion[17])
+console.log(theQuestion.slice(6,18))
