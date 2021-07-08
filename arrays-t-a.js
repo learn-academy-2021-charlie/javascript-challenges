@@ -22,22 +22,34 @@
 
 // Write the code that will add "beans" to the "chips" and "dip" array.
 
-var groceryList = ["chips", "dip", "cookies"]
-var item = "beans"
-console.log(groceryList.slice(0,2))
-console.log(groceryList.slice(0,2).concat(item))
+// var groceryList = ["chips", "dip", "cookies"]
+// var item = "beans"
+// console.log(groceryList.slice(0,2))
+// console.log(groceryList.slice(0,2).concat(item))
 
 
 // Consider the variable:
 
 // var numbers = [2, 4, 6, 8, 10]
 // Write the code that will add the number 0 to the beginning of the array.
-
+// var numbers = [2, 4, 6, 8, 10]
+// console.log(numbers.unshift(0));
+// console.log(numbers);
 // Write the code that will add the number 12 to the end of the array.
+//
+// var numbers = [2, 4, 6, 8, 10]
+// numbers.push(12)
+// console.log(numbers);
 
 // Write the code that will remove the first number from the array.
+// var numbers = [2, 4, 6, 8, 10]
+// numbers.shift()
+// console.log(numbers);
 
 // Write the code that will add the number 0 to the beginning of the array without altering the original array. HINT: it's not .unshift You'll have to get creative! ;)
+var numbers = [2, 4, 6, 8, 10]
+var randomNum = [0]
+console.log(randomNum.concat(numbers));
 
 // Consider the variable:
 
