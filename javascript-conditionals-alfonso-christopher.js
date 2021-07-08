@@ -38,3 +38,30 @@ if(firstNum > secondNum) {
 }
 
 // Write an if/else statement that takes a variable of a number and logs whether the number is odd, even, or zero.
+var num = "blue"
+if(num === 0){
+    console.log("it's zero!")
+}else if(num % 2 === 1){
+    console.log("it's odd!")
+}else if(num % 2 === 0){
+    console.log("it's even!")
+}else{
+    console.log("enter a number")
+}
+
+var testNum = 13
+console.log(testNum)
+testNum = parseInt(testNum / 2)
+console.log(testNum);
+testNum = testNum * 2
+console.log(testNum)
+
+// console.log(!(testNum & 1))
+// function isEven(n)
+//     {
+//         // n&1 is 1, then odd, else even
+//         return (!(n & 1));
+//     }
+
+// console.log(isEven(testNum))
+
