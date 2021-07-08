@@ -58,4 +58,4 @@ console.log(theQuestion.slice(6,18) )
 // Write the code that will log the character "l" from theQuestion.
 console.log(theQuestion [0])
 // Write the code that will log whether theQuestion.length is greater that theAnswer.
-console.log(theQuestion.length > theAnswer)
+console.log(theQuestion.length > theAnswer.length)
