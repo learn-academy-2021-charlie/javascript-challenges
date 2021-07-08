@@ -12,7 +12,8 @@ console.log(groceryList)
 
 // !!!! -- WHITHOUT ALTERING???
 // Write the code that will add "granola" to the end of array without altering the original array.
-groceryList[4] = 'granola'
+var item = ["granola"]
+console.log(groceryList.concat(item))
 console.log(groceryList)
 
 // Write the code that will return a subset of the array containing only "chips" and "dip".
@@ -27,12 +28,22 @@ console.log(newArr)
 
 var numbers = [2, 4, 6, 8, 10]
 // Write the code that will add the number 0 to the beginning of the array.
-
+numbers.unshift(0)
+console.log(numbers)
 // Write the code that will add the number 12 to the end of the array.
+numbers.push(12)
+console.log(numbers)
 
 // Write the code that will remove the first number from the array.
+numbers.shift()
+console.log(numbers)
 
-// Write the code that will add the number 0 to the beginning of the array without altering the original array. HINT: it's not .unshift You'll have to get creative! ;)
+// Write the code that will add the number 0 to the beginning of the array without altering the original array. 
+//HINT: it's not .unshift You'll have to get creative! ;)
+//array.concat() 
+var newNumbers = [0]
+console.log(newNumbers.concat(numbers))
+console.log(numbers)
 
 // Consider the variable:
 
