@@ -65,3 +65,38 @@ console.log(testNum)
 
 // console.log(isEven(testNum))
 
+// Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
+
+
+var grade = "blue"
+if(grade >= 100) {
+    console.log("perfect score")
+} else if(grade >= 90 && grade < 100) {
+    console.log("Grade: A")
+} else if(grade >= 80 && grade < 90) {
+    console.log("Grade: B")
+} else if(grade >= 70 && grade < 80) {
+    console.log("Grade: C")
+} else if(grade >= 60 && grade < 70) {
+    console.log("Grade: D")
+} else if(grade >= 1 && grade < 60) {
+    console.log("Grade: F :(")
+} else if(grade === 0) {
+    console.log("no grade available")
+} else {
+    console.log("enter a valid number")
+}
+
+// Write an if/else statement that takes a variable of a boolean, number, or string datatype and logs the data type of the variable HINT: use the JS operator typeof.
+
+var myVariable = 55
+console.log(typeof myVariable)
+if(typeof myVariable === "boolean") {
+    console.log(`${myVariable} is a boolean`)
+} else if(typeof myVariable === "number") {
+    console.log(`${myVariable} is a number`)
+} else if(typeof myVariable === "string") {
+    console.log(`${myVariable} is a string`)
+} else {
+    console.log("Enter a data type")
+}
