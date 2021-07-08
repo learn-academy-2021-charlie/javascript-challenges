@@ -6,22 +6,22 @@
 var groceryList = ["chips", "dip", "cookies"]
 
 // 1. Write the code that will add "soda" to the end of the original array.
-groceryList.push("soda")
-console.log(groceryList)
+// groceryList.push("soda")
+// console.log(groceryList)
 //
 // 2. Write the code that will add "granola" to the end of array without altering the original array.
-var groceryList2 = ["granola"]
-console.log(groceryList.concat(groceryList2))
+// var groceryList2 = ["granola"]
+// console.log(groceryList.concat(groceryList2))
 //
 // 3. Write the code that will return a subset of the array containing only "chips" and "dip".
-console.log(groceryList.slice(0, 2))
+// console.log(groceryList.slice(0, 2))
 //
 
 // 4. Write the code that will add "beans" to the "chips" and "dip" array.
-var chipsDip = groceryList.slice(0,2)
-console.log(chipsDip)
-chipsDip.push("beans")
-console.log(chipsDip)
+// var chipsDip = groceryList.slice(0,2)
+// console.log(chipsDip)
+// chipsDip.push("beans")
+// console.log(chipsDip)
 
 //
 // Consider the variable:
@@ -29,12 +29,24 @@ console.log(chipsDip)
 var numbers = [2, 4, 6, 8, 10]
 //
 // 5. Write the code that will add the number 0 to the beginning of the array.
+// console.log(numbers.unshift(0))  // output is the length of the array
+// console.log(numbers)
+
 //
 // 6. Write the code that will add the number 12 to the end of the array.
+// console.log(numbers.push(12))
+// console.log(numbers)
+
 //
 // 7. Write the code that will remove the first number from the array.
+// console.log(numbers.shift())
+// console.log(numbers)
+
 //
 // 8. Write the code that will add the number 0 to the beginning of the array without altering the original array. HINT: it's not .unshift You'll have to get creative! ;)
+// var number = [0]
+// console.log(number.concat(numbers))
+
 //
 // Consider the variable:
 //
