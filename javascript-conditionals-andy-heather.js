@@ -31,18 +31,55 @@ if(number1 > number2 ){
     console.log(number1)
 }
 else if (number1 < number2){
-    console.log(number2) 
+    console.log(number2)
 }
 else if (number1 === number2){
     console.log("your numbers are the same")
 }
 // Write an if/else statement that takes a variable of a number and logs whether the number is odd, even, or zero.
+var number = 4
+if (number == 0){
+  console.log("number is zero")
+}else if(number%2 == 1){
+  console.log("number is odd")
+}else if(number%2 == 0) {
+  console.log("number is even")
+}
 
 // STRETCH Challenges
 
 // Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
-
+var grade = "0%"
+if(grade == "0%"){
+  console.log("No grade is available")
+}else if(grade == "100%"){
+  console.log("perfect score")
+}else if(grade >= "90%"){
+  console.log("You got an A")
+}else if(grade >= "80%"){
+  console.log("You got a B")
+}else if(grade >= "70%"){
+  console.log("You got a C")
+}else if(grade >= "60%"){
+  console.log("You got a D")
+}else if(grade >= "1%"){
+  console.log("You got an F")
+}
 // Write an if/else statement that takes a variable of a boolean, number, or string datatype and logs the data type of the variable HINT: use the JS operator typeof.
-
+var dataType = 35
+if(typeof dataType == "string" ){
+  console.log("String")
+}else if( typeof dataType == "boolean"){
+  console.log("Boolean")
+}else if(typeof dataType == "number"){
+  console.log("Number")
+}else{
+  console.log("undeclared variable")
+}
 // Create a password checker using a single if/else statement. If a user inputs a password with 12 or more characters AND the password includes !, then log "That is a mighty strong password!" If the user’s password is 8 or more characters OR includes !, then log "That password is strong enough." Log "That is not a valid password." for every other input.
-
+var password = "nope"
+if(password.length >= 12 && password.includes("!")){
+  console.log("That is a mighty strong password!")
+}else if(password.length >= 8 || password.includes("!")){
+  console.log("That password is strong enough.")
+}else {console.log("That is not a valid password.")}
