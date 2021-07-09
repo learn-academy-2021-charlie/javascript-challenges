@@ -48,8 +48,25 @@
 //
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
 //
+// const assignGrade = (score) => {
+//     if(score >= 90 && score < 100){
+//         return "A"
+//     }else if(score >= 80 && score < 90){
+//         return "B"
+//     }else if(score >= 70 && score < 80){
+//         return "C"
+//     }else if(score >= 60 && score < 70){
+//         return "D"
+//     }else return "F"
+// }
+// console.log(assignGrade(93))
 // Write a function named isLonger that takes two strings as arguments and returns the string that contains the most characters.
 //
+// const isLonger = (string1, string2) => {
+//     typeof string1 == "string" && typeof string2 == "string" && (string1.length > string2.length) ?  string1 :  string2
+// }
+// console.log(isLonger(2,5))
+
 // Write a function named greaterNum that takes two numbers as arguments and returns whichever number is the greater (higher) number.
 //
 // Write a function named yelling that takes a string as an argument and return the string in all uppercase case letters.
