@@ -53,7 +53,20 @@ if (number1 > number2) {
 
 
 // 5. Write an if/else statement that takes a variable of a number and logs whether the number is odd, even, or zero.
+var numb = 0
+// var numb = 1
+// var numb = 2
+if (numb % 2 === 0){
+  console.log("even")
+} else if (numb % 2 !== 0){
+  console.log("odd")
+} else {
+  console.log("zero")
+}
+
+
 //
+
 // STRETCH Challengesa
 //
 // 6. Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
