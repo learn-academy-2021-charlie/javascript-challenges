@@ -68,29 +68,57 @@
 //70-79
 // 60-69
 //59 <=
-const assignGrade  = (score) => {
-if(score >= 90){
-  return "A"
-}else if(score >= 80 && score <= 89){
-  return "B"
-}else if(score >= 70 && score <=79){
-  return "C"
-}else if(score >= 60 && score <=69){
-  return "D"
-}else{
-  return "F"
-}
-}
-console.log(assignGrade(91))
+// const assignGrade  = (score) => {
+// if(score >= 90){
+//   return "A"
+// }else if(score >= 80 && score <= 89){
+//   return "B"
+// }else if(score >= 70 && score <=79){
+//   return "C"
+// }else if(score >= 60 && score <=69){
+//   return "D"
+// }else{
+//   return "F"
+// }
+// }
+// console.log(assignGrade(91))
 
 
 
 // Write a function named isLonger that takes two strings as arguments and returns the string that contains the most characters.
 //
+// const isLonger = (word1 , word2) => {
+//   if (word1.length > word2.length){
+//     return `${word1} is greater than ${word2}`
+//   }
+//   else if (word2.length > word1.length){
+//     return `${word2} is greater than ${word1}`
+//   }else if (word2.length === word1.length){
+//     return `${word2} is equal to ${word1}`
+//   }else {
+//       return "use an actual word knucklehead"
+//   }
+//   }
+// console.log(isLonger("hello","asdifbasidf"))
 // Write a function named greaterNum that takes two numbers as arguments and returns whichever number is the greater (higher) number.
-//
+// create 2 inputs num1 + num2
+// then compare using if to see which is greater
+// return num1 is/not greater than num2
+// const greaterNum = (num1, num2) => {
+//   if (num1 > num2){
+//     return `${num1} is greater than ${num2}`
+//   }else if (num2 > num1) {
+//     return`${num2} is greater than ${num1}`
+//   }else{
+//     return "try again"
+//   }
+// }
+// console.log(greaterNum(1,3))
 // Write a function named yelling that takes a string as an argument and return the string in all uppercase case letters.
-//
+const yelling = (word) => {
+  return word.toUpperCase()
+}
+console.log(yelling("hi"))
 // STRETCH Challenges
 // The World Translator
 // (a) Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
