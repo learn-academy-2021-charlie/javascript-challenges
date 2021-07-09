@@ -10,11 +10,16 @@ const greeting =(name) =>{
 console.log(greeting("Brian"))
 
 // // Write a function named oddOrEven that takes a number as an argument and returns whether the number is odd or even.
-//  const oddOrEven = (number) =>{
-//     if(number % == 0)
-//     return `${number} is even`
-// }
-// console.log(oddOrEven("2"))
+ const oddOrEven = (number) =>{
+    if(number % 2 == 0) {
+    return `${number} is even`
+    }else if(number % 2 == 1) {
+    return `${number} is odd`
+    }  else {
+    return "please input a valid entry"
+    }
+}
+console.log(oddOrEven(95))
 // Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
 const triple = (number) => {
     return number * 3
