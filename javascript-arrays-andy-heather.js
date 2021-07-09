@@ -8,9 +8,12 @@ console.log(groceryList)
 groceryList.push("granola")
 console.log(groceryList)
 // Write the code that will return a subset of the array containing only "chips" and "dip".
-console.log(groceryList.slice(0,2))
+var newArray = groceryList.slice(0,2)
+console.log(newArray)
 // Write the code that will add "beans" to the "chips" and "dip" array.
-console.log(groceryList.slice(0,2).push("beans",))
+groceryList.splice(2,3,"beans")
+console.log(groceryList)
+
 // Consider the variable:
 //
 var numbers = [2, 4, 6, 8, 10]
@@ -73,6 +76,13 @@ console.log(nameArray3.sort())
  var oddIndexes = []
 // Write the code that logs the values from the numbers array that are at odd indexes.
 //
+for( let i=1; i<numbers.length; i += 2) {
+  console.log(numbers[i])
+}
 
 // Write the code that adds the values from odd indexes into the oddIndexes array.
 //
+for( let i=1; i<numbers.length; i += 2) {
+  oddIndexes.push(numbers[i])
+}
+console.log(oddIndexes)
