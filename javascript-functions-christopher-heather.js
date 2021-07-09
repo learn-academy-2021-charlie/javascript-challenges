@@ -82,3 +82,22 @@ console.log(yelling("hello there"))
 // The World Translator
 // (a) Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
 // (b) Have your function default to returning English.
+
+const helloWorld = (language = "english") => {
+    if(language.toLowerCase === "english") {
+        lang = "en"
+        return "Hello World"
+} else if(language === "french") {
+    lang = "fr"
+    return "hello world"
+} else if(language.toLowerCase === "italian") {
+    return "ciao mondo"
+} else if(language.toLowerCase === "german") {
+    return "hallo welt"
+} else if(language.toLowerCase === "spanish") {
+    return "hola mundo"
+} else { 
+    return "input a valid language"
+}
+}
+console.log(helloWorld("french"));
