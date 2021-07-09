@@ -133,3 +133,4 @@ console.log(yelling("hi"))
 // pluralizer(1, "dog")
 // // expected output: "1 dog"
 // (b) Enhance your function so it can handle a few collective nouns like "sheep", "goose", "child", "person" and "species".
+//github commit test
