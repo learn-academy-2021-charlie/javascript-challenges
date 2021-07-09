@@ -64,4 +64,4 @@ var oddIndexes = []
 
 // 19. Write the code that logs the values from the numbers array that are at odd indexes.
 
-// 20. Write the code that adds the values from odd indexes into the oddIndexes array.
+// 20. Write the code that adds the values from odd indexes into the oddIndexes array..
