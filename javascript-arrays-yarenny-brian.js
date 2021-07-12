@@ -1,11 +1,9 @@
  //1. Write the code that will add "soda" to the end of the original array.
-// Write the code that will add "soda" to the end of the original array.
 // var grocerylist = ["chips", "dip", "cookies"]
 // console.log(grocerylist.push("soda"))
 // console.log(grocerylist)
 
 // 2. Write the code that will add "granola" to the end of array without altering the original array.
-// Write the code that will add "granola" to the end of array without altering the original array.
 // var grocerylist1 = ["chips", "dip", "cookies"]
 // var grocerylist2 = ["granola"]
 // console.log(grocerylist1.concat(grocerylist2));
