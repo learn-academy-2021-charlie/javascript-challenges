@@ -1,100 +1,89 @@
 var groceryList = ["chips", "dip", "cookies"]
+
 // Write the code that will add "soda" to the end of the original array.
-// groceryList.push("soda")
-//   console.log(groceryList)
-
+groceryList.push("soda")
+console.log(groceryList)
 // Write the code that will add "granola" to the end of array without altering the original array.
-
-// groceryList[groceryList.length-1] = "granola"
-//   console.log(groceryList)
-
+const granola = ["granola"]
+console.log(groceryList.concat(granola))
+console.log(groceryList)
 // Write the code that will return a subset of the array containing only "chips" and "dip".
-
-var newList = groceryList.slice(0,2)
-
-// console.log(groceryList.slice(0,2))
-
+const partyGroceryList = groceryList.slice(0,2)
+console.log(partyGroceryList)
 // Write the code that will add "beans" to the "chips" and "dip" array.
+partyGroceryList.push("beans")
+console.log(partyGroceryList)
 
-// newList.push("beans")
-//  console.log(newList)
-
-
-// Consider the variable:
-// var numbers = [2, 4, 6, 8, 10]
+var numbers = [2, 4, 6, 8, 10]
 // Write the code that will add the number 0 to the beginning of the array.
-//
-// numbers.unshift(0)
-// console.log(numbers)
-//
+numbers.unshift(0)
+console.log(numbers)
 // Write the code that will add the number 12 to the end of the array.
-//
-// numbers.push(12)
-// console.log(numbers)
-//
+numbers.push(12)
+console.log(numbers)
 // Write the code that will remove the first number from the array.
-//
-// numbers.shift()
-// console.log(numbers)
-//
+numbers.shift()
+console.log(numbers)
 // Write the code that will add the number 0 to the beginning of the array without altering the original array. HINT: it's not .unshift You'll have to get creative! ;)
-//
-// console.log([0].concat(numbers))
-// console.log(numbers)
-//
+const newNumber = [0]
+console.log(newNumber.concat(numbers))
+
+var numSet = [2, 13, 6, 8, 4, 2]
 // Write the code that finds the index of the first appearance of the number 2.
-//
-// console.log(numbers.indexOf(2))
-//
+console.log(numSet.indexOf(2))
 // Write the code that finds the index of the last appearance of the number 2.
-//
-// console.log(numbers.lastIndexOf(2))
-//
+console.log(numSet.lastIndexOf(2))
 // Write the code that returns the number at the third index.
-
-// console.log(numbers[3])
-
+console.log(numSet[3])
 
 var characters = ["y", "a", "r", "r", "a"]
-//
 // Write the code that brings all the letters in the characters array together into a string.
-//
-// console.log(characters.join(""))
-
+var joinedCharacters = characters.join("-")
+console.log(joinedCharacters)
 // Write the code that reverses the order of the letters in the characters array and saves it into a variable called charsReversed.
-
-let charsReversed = characters.reverse()
-// console.log(charsReversed)
-
+var charsReversed = characters.reverse()
+console.log(charsReversed)
 // Write the code that brings all the letters in the charsReversed array together into a string with an asterisk between each letter.
-//
-// console.log(charsReversed.join("*"))
-
+var charsReversed2 = charsReversed.join("*")
+console.log(charsReversed2)
 // Write the code that brings all the letters in the charsReversed array together into a string without separators.
-//
-console.log(charsReversed.join(""))
-
+var charsReversed3 = charsReversed.join("")
+console.log(charsReversed3)
 // Create two arrays consisting of three first names of your cohort members in each.
-//
-let array1 = ["jared", "kelen", "amanda"]
-let array2 = ["arturo", "chris", "heather"]
-
-
+var listOfNames1 = ["Christopher", "Alfonso", "Conrad"]
+var listOfNames2 = ["Brian", "Chauncy", "Heather"]
 // Write the code that sorts the names in alphabetical order.
-//
-// console.log(array1.concat(array2).sort())
-
+listOfNames1.sort()
+console.log(listOfNames1)
+console.log(listOfNames2.sort())
 // Write the code that sorts the names in reverse alphabetical order.
-//
-// console.log(array1.concat(array2).sort().reverse())
+listOfNames1.reverse()
+console.log(listOfNames1)
+listOfNames2.reverse()
+console.log(listOfNames2)
+// Write the code that sorts all the names in alphabetical order in a single array.
 
-// Write the code that sorts all the
-// names in alphabetical order in a single array.
+var fullListOfNames = listOfNames1.concat(listOfNames2)
+console.log(fullListOfNames.sort())
+
+
 
 var numbers = [42, 221, 71, 7, 18, 87]
 var oddIndexes = []
+
 // Write the code that logs the values from the numbers array that are at odd indexes.
-//
-console.log(numbers[1], numbers[3], numbers[5])
 
 // Write the code that adds the values from odd indexes into the oddIndexes array.
+
+if(0 % 2 !== 0){
+    console.log(numbers[0])
+}
+if(1 % 2 !== 0){
+    console.log(numbers[1])
+}
+if(2 % 2 !== 0){
+    console.log(numbers[2])
+}
+// console.log(numbers[1])
+// console.log(numbers[3])
+// console.log(numbers[5])
