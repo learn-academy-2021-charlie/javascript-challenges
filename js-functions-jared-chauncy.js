@@ -29,6 +29,8 @@ const oddOrEven = (number) => {
 
 console.log(oddOrEven(1))
 
+"hello world"
+
 // Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
 //
 // Write a function named multiply that takes two numbers as arguments and returns the result of the numbers multiplied together.
