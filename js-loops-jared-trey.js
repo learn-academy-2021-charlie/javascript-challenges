@@ -34,16 +34,32 @@
 
 // Create a loop that will log the highest number from the array. Expected output --> 67
 
-var array = [3, 57, -9, 20, 67]
-var largest = [0]
+ //var array = [3, 57, -9, 20, 67]
+// var largest = 0
 
-for (let i = 0; array.length; i++){
-  if (array[i] > largest){
-    largest[0] = array[i]
-  }
-}
-console.log(largest);
-//
+// for (let i = 0; array.length; i++){
+//   if (array[i] > largest){
+//     largest = array[i]
+//     console.log(largest);
+//   };
+// }
 // Create a loop that will log the lowest number from the array Expected output --> -9
 //
+var array = [3, 57, -9, 20, 67]
+var smallest = 0
+for (let i = 0; i < array.length; i++){
+   if (array[i] < smallest){
+     smallest = array[i]
+     console.log(smallest)
+   }else{
+
+   }  
+} 
+
+
 // Create a loop that will log the remainder of each number when divided by 2. Expected output --> 1, 1, -1, 0, 1
+var remainderList = []
+for (let i = 0; i < array.length; i++){
+remainderList[i] = array[i] % 2 //this takes both the index inline with each other giving the same lists for the same space.
+}
+console.log(remainderList)
