@@ -9,22 +9,39 @@
 // for (let i=1; i<=20; i+=3) {
 //     console.log(i)
 // }
-// Create a for loop that logs each even number from 1-20, and in the place of every odd number, returns the word "ODD" Expected output --> ODD, 
+// Create a for loop that logs each even number from 1-20, and in the place of every odd number, returns the word "ODD" Expected output --> ODD,
 // 2, ODD, 4, ODD, 6 ...etc
-for (let i=1; i<=20; i+=1) {
-    if (i % 2 == 0) {
-    console.log(i) }
- else if (i % 2 !== 0) {
-    console.log("Odd")
-}
-}
+// for (let i=1; i<=20; i+=1) {
+//     if (i % 2 == 0) {
+//     console.log(i) }
+//  else if (i % 2 !== 0) {
+//     console.log("Odd")
+// }
+// }
 
 
     // Looping over an array. Consider this variable:
-// var nums = [3, 57, -9, 20, 67]
+var nums = [3, 57, -9, 20, 67]
+var largest = 0
+var smallest = 0
 // Create a loop that will log the highest number from the array. Expected output --> 67
+for(let i=0; i < nums.length; i++){
+  if(nums[i] > largest){
+    largest = nums[i]
+  }
+}
+console.log(largest);
 // Create a loop that will log the lowest number from the array Expected output --> -9
-// Create a loop that will log the remainder of each number when divided by 
+for(let i=0; i < nums.length; i++){
+  if(nums[i] < smallest){
+    smallest = nums[i]
+  }
+}
+console.log(smallest);
+// Create a loop that will log the remainder of each number when divided by
+for(let i=0; i < nums.length; i++){
+  console.log(nums[i] % 2);
+}
 
 // 2. Expected output --> 1, 1, -1, 0, 1
 // Looping over a string. Consider this variable:
