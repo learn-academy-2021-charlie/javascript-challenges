@@ -27,3 +27,13 @@ if (trafficlight === "green"){
     console.log("STOP")
 } 
 
+//Write an if/else statement that takes two variables of numbers and outputs the larger number, or logs equal if the numbers are the same.
+
+var num1 = (5)
+var num2 = (1)
+
+if(num1 > num2){
+    console.log("Number 1 is Larger")
+} else if (num1 < num2){
+    console.log("")
+}
