@@ -22,7 +22,8 @@ console.log(greeting("Jared"))
 const oddOrEven = (number) => {
   if (number % 2 === 0){
     return `${number} is even`
-  }else if (number % 2 !== 0){
+  }
+  else if (number % 2 !== 0){
     return `${number} is odd`
   }
 }
@@ -30,13 +31,48 @@ const oddOrEven = (number) => {
 console.log(oddOrEven(1))
 
 // Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
-//
+const triple = (number) => {
+  return (number * 3) 
+}
+console.log(triple(3))
+
 // Write a function named multiply that takes two numbers as arguments and returns the result of the numbers multiplied together.
-//
+const multiply = (num1, num2) => {
+  return num1 * num2
+}
+console.log(multiply(2, 5))
+
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
-//
+const divisibleBy = (num1, num2) => {
+  if(num1 % num2 === 0 ){
+    return `${num1} is evenly divisible by ${num2}`
+  }
+  else{
+    return `${num1} is not evenly divisible by ${num2}`
+  }
+}
+console.log(divisibleBy(48, 2))
+
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
-//
+const assignGrade = (score) => {
+  if(score >= 90 ){
+    return "A"
+  }
+  else if(score < 90 && score >= 80){
+    return "B"
+  }
+  else if(score < 80 && score >= 70){
+    return "C"
+  }
+  else if(score < 70 && score >= 60){
+    return "D"
+  }
+  else{
+    return "F"
+  }
+}
+console.log(assignGrade(10000));
+
 // Write a function named isLonger that takes two strings as arguments and returns the string that contains the most characters.
 //
 // Write a function named greaterNum that takes two numbers as arguments and returns whichever number is the greater (higher) number.
