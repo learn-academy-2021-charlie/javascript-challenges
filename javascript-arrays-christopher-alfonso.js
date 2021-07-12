@@ -65,3 +65,25 @@ console.log(listOfNames2)
 
 var fullListOfNames = listOfNames1.concat(listOfNames2)
 console.log(fullListOfNames.sort())
+
+
+
+var numbers = [42, 221, 71, 7, 18, 87]
+var oddIndexes = []
+
+// Write the code that logs the values from the numbers array that are at odd indexes.
+
+// Write the code that adds the values from odd indexes into the oddIndexes array.
+
+if(0 % 2 !== 0){
+    console.log(numbers[0])
+}
+if(1 % 2 !== 0){
+    console.log(numbers[1])
+}
+if(2 % 2 !== 0){
+    console.log(numbers[2])
+}
+// console.log(numbers[1])
+// console.log(numbers[3])
+// console.log(numbers[5])
