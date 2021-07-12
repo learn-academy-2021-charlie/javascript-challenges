@@ -17,24 +17,49 @@
 
 
 
-for(let i = 1; i < 21; i++){
-    if(i % 2 === 0){
-        console.log(i)
-        // return i
-    }else if(i % 2 !== 0){
-        console.log("ODD")
-        // return "ODD"
-    }
-}
+// for(let i = 1; i < 21; i++){
+//     if(i % 2 === 0){
+//         console.log(i)
+//         // return i
+//     }else if(i % 2 !== 0){
+//         console.log("ODD")
+//         // return "ODD"
+//     }
+// }
 
 
 // Looping over an array. Consider this variable:
 var nums = [3, 57, -9, 20, 67]
 
-
 // Create a loop that will log the highest number from the array. Expected output --> 67
+
+//create for loop
+    //for each item - compare against current highest num
+        //if higher - replace value
+            //need: evaluation statement + variable to hold current highest number
+// var greaterValue = 1
+//expected output 67
+
+// for(let i=0; i<nums.length; i++){
+//     if (nums[i] > greaterValue) {
+//         greaterValue = nums[i]
+//     }    
+//     console.log(`current greaterValue; ${greaterValue}`) //for verification and personal satisfaction
+// }
+// console.log(greaterValue)
+
 // Create a loop that will log the lowest number from the array Expected output --> -9
+// lowestValue = 1
+// for(let i=0; i<nums.length; i++){
+//     if(nums[i] < lowestValue) {
+//         lowestValue = nums[i]
+//     }
+//     console.log(`current lowestValue; ${lowestValue}`)
+// }
+// console.log(lowestValue)
+
 // Create a loop that will log the remainder of each number when divided by 2. Expected output --> 1, 1, -1, 0, 1
+for(let i=)
 // Looping over a string. Consider this variable:
 // var myString = "learn student"
 // Write the code that will log the number of times the letter "e" occurs in the string. Expected output --> 2
