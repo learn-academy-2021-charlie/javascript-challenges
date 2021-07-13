@@ -104,20 +104,46 @@ console.log(largestIndex(indexHighestNumber))
 // 1. Create a function that takes in a string and returns a sentence expressing whether the string is a palindrome. A palindrome is the same word spelled forward and backwards.
 
 // ```javascript
-// var isPalindrome1 = "racecar"
+var isPalindrome1 = "racecar"
 // // --> "Yes, racecar is a palindrome."
 
-// var isPalindrome2 = "albatross"
+var isPalindrome2 = "albatross"
 // // --> "No, albatross is not a palindrome."
 // ```
+
+const isPalindrome = (str) => {
+    // go backwards from the str to see if the chars
+    // match when going forward too
+    for (let i = 0, j = str.length-1; i < str.length; i++, j--) {
+        // if chars don't match then not a palindrome
+        if (str[i] !== str[j]) {
+            return `No, ${str} is not a palindrome`
+        }
+        return `Yes, ${str} is a palindrome`
+    }
+}
+
+console.log(isPalindrome(isPalindrome1))
+console.log(isPalindrome(isPalindrome2))
 
 // 2. Create a function that takes in two arrays and returns one array with no duplicate values.
 
 // ```javascript
-// var arr1 = [3, 7, 10, 5, 4, 3, 3]
-// var arr2 = [7, 8, 2, 3, 1, 5, 4]
+var arr1 = [3, 7, 10, 5, 4, 3, 3]
+var arr2 = [7, 8, 2, 3, 1, 5, 4]
 // // --> [3, 7, 10, 5, 4, 8, 2, 1]
 // ```
+
+// make a new array
+// combine arrays
+// check if current num of combined arr is in the new unique array, if current num is not, then push it
+// return the array
+
+const uniqueArr = (arr1, arr2) => {
+    let unique = []
+    combined = arr1.concat(arr2)
+    
+}
 
 // 3. Create a function that takes in an array and returns an array without any false, null, 0 or blank values.
 
