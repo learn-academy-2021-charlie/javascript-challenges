@@ -75,3 +75,79 @@
 //     return index
 // }
 // console.log(large(indexHighestNumber))
+
+// STRETCH Challenges
+
+// Create a function that takes in a string and returns a sentence expressing whether the string is a palindrome. A palindrome is the same word spelled forward and backwards.
+ var isPalindrome1 = "racecar"
+// --> "Yes, racecar is a palindrome."
+
+ var isPalindrome2 = "albatross"
+// // --> "No, albatross is not a palindrome."
+
+const isPalindromeTest = (str) => {
+    //check the 1st && check the last index ===
+    //if there === then move 1st index up 1 and move the last index down 1
+
+    var lastIndex = str.length - 1;
+    for(let i = 0; i < str.length/2; i++)
+    {
+        // console.log("first: " + str[i])
+        //console.log("last: " + str[lastIndex])
+        if(str[i] === str[lastIndex])
+        {
+            lastIndex--;
+        }
+        else{
+            return `No, ${str} is not a palindrome`
+        }
+    }
+    return `Yes, ${str} is a palindrome`
+}
+
+console.log(isPalindromeTest(isPalindrome1))
+console.log(isPalindromeTest(isPalindrome2))
+
+// Create a function that takes in two arrays and returns one array with no duplicate values.
+var arr1 = [3, 7, 10, 5, 4, 3, 3]
+var arr2 = [7, 8, 2, 3, 1, 5, 4]
+// --> [3, 7, 10, 5, 4, 8, 2, 1]
+
+const combineArrays = (arr1, arr2) => {
+    let newArr = []
+    
+    newArr = arr1.concat(arr2)
+    //create a for loop 
+    //hold on to the 1st and then check the rest elements to see if there is a duplicate 
+    //if there is a dup. then slice() it out
+    //keep checking until end to remove duplicates
+
+    //then repeat for each element
+
+    return newArr
+}
+
+console.log(combineArrays(arr1, arr2))
+
+// Create a function that takes in an array and returns an array without any false, null, 0 or blank values.
+// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+// // --> [58, "abcd", true]
+// Create a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
+// var arrayLength = 6
+// var arrayValue = 0
+// // --> [0, 0, 0, 0, 0, 0]
+
+// var arrayLength = 4
+// var arrayValue = 11
+// // --> [11, 11, 11, 11]
+// Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
+// var addUp1 = 4
+// // 1 + 2 + 3 + 4 = 10
+// // --> 10
+
+// var addUp2 = 10
+// // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+// // --> 55
+
+// var addUp3 = 600
+// // --> 180300
