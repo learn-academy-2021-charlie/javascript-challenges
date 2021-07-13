@@ -22,32 +22,32 @@
 // if it is, will push to a new array
 //
 
-var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+// var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
 
-const oddNumbs = (array) => {
-  let oddArray = []
-  for (let i=0; i<array.length; i++){
-    if (array[i] % 2 !== 0){
-    oddArray.push(array[i])
-  } 
-  }
-  return oddArray
-}
-console.log(oddNumbs(testArr2))
+// const oddNumbs = (array) => {
+//   let oddArray = []
+//   for (let i=0; i<array.length; i++){
+//     if (array[i] % 2 !== 0){
+//     oddArray.push(array[i])
+//   } 
+//   }
+//   return oddArray
+// }
+// console.log(oddNumbs(testArr2))
 
 // Expected output --> [-7, 3, 5, 13]
 //
 // Write a function that takes in a string and returns a new string with every letter capitalized. HINT: you do not need arrays or loops.
-var myMessage = "Hello There"
+// var myMessage = "Hello There"
 // make a function -- everyLetter
 // the function will take a string as an argument. 
 // use the built in method toUpperCase() to capitalize all letter in the string
 // we
-const everyLetter = (anything) => {
-  return anything.toUpperCase()
-}
+// const everyLetter = (anything) => {
+//   return anything.toUpperCase()
+// }
 
-console.log(everyLetter(myMessage))
+// console.log(everyLetter(myMessage))
 
 // Expected output --> "HELLO THERE"
 //
@@ -58,25 +58,39 @@ console.log(everyLetter(myMessage))
 // use conditions to check if element in array is a letter (string)
 // push letter (string elements) to emtpy array
 // we JOIN it to make it one string!!!
-var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+// var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
 
-const makeAstring = (arr) => {
-  let lettersArray = []
-  for (let i = 0; i < arr.length; i++){
-    if (typeof arr[i] === 'string') {
-      lettersArray.push(arr[i])
-    }
-  }
-  return lettersArray.join('');
-}
-console.log(makeAstring(comboArr))
+// const makeAstring = (arr) => {
+//   let lettersArray = []
+//   for (let i = 0; i < arr.length; i++){
+//     if (typeof arr[i] === 'string') {
+//       lettersArray.push(arr[i])
+//     }
+//   }
+//   return lettersArray.join('');
+// }
+// console.log(makeAstring(comboArr))
 // Expected output --> "nicework"
 //
 // Create a function that returns the highest number
-// var highestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+var highestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
 //
 // Expected output --> 67
-//
+// create a function that evaulate each I
+// sort index from and return the highest number
+
+const biggestNum = (array) => {
+  let maxNum = 0
+  for (let i = 0; i<array.lenght; i++){
+    if (array[i] < maxNum){
+      maxNum = array[i]
+    }
+  }
+  return maxNum
+}
+
+console.log(biggestNum(highestNumber))
+
 // Create a function that returns the lowest number
 // var lowestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
 //
