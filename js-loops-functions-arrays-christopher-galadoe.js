@@ -62,3 +62,20 @@ const highestIndex = (array) => {
     return array.indexOf(largestNum)
 }
 console.log(highestIndex(indexHighestNumbers));
+
+var isPalindrome1 = "racecar"
+var isPalindrome2 = "albatross"
+
+const palindrome = (letter) => {
+    let string = ""
+    for( let i = 0; i<letter.length; i++) {
+        if(letter.split("") === letter.split("").reverse().join("")) {
+            string = `Yes, ${letter} is a palindrome`
+        } else if (letter.split("") != letter.split("").reverse().join("")) {
+            string = `No, ${letter} is not a palindrome`
+        }
+    }
+    return string
+}
+console.log(palindrome(isPalindrome1));
+console.log(palindrome(isPalindrome2));
