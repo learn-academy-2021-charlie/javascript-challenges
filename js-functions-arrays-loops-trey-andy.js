@@ -25,32 +25,52 @@
 // console.log(multiply3(testArr2))
 
 
---> [-7, 3, 5, 13]
-//Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
-var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
-const areYouAString = (array) => {
-    let stringArray = []
-    for (i = 0; i < array.length; i++){
-        if (typeof array[i] === "string"){
-            stringArray.push(array[i])
-        }
-    }return stringArray
-}
-console.log(areYouAString(comboArr))
-// --> "nicework"
+// --> [-7, 3, 5, 13]
+// //Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
+// var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+// const areYouAString = (array) => {
+//     let stringArray = []
+//     for (i = 0; i < array.length; i++){
+//         if (typeof array[i] === "string"){
+//             stringArray.push(array[i])
+//         }
+//     }return stringArray
+// }
+// console.log(areYouAString(comboArr))
+// // --> "nicework"
 //Create a function that takes in an array of numbers and returns the sum.
-
-var addThese1 = [1, 2, 3, 4]
-const addNumbers = (array) => {
-    
-}
 // --> 10
+// var addThese1 = [1, 2, 3, 4]
 
-var addThese2 = []
 // --> 0
+// var addThese2 = []
+// const addNumbers = (array) => {
+//     let sumAll = 0
+//     for( let i=0;i<array.length;i++){
+//     //    sumAll.push
+//      sumAll += array[i] ;
+//     }
+//     return sumAll
+// }
+
+// console.log(addNumbers(addThese2))
+
+
+
+
 //Create a function that takes in an array of numbers and returns the index of the largest number.
 var indexHighestNumber = [1, 4, 2, 3]
 // --> 1
+
+const largestNumber = (array) => {
+    let bigBoy = 0
+    for( let i = 0; i<array.length; i++){
+        if(array[i]>bigBoy) {
+      bigBoy = array[i]
+    }
+    }return bigBoy
+}
+console.log(largestNumber(indexHighestNumber))
 //STRETCH Challenges*********************************
 
 //Create a function that takes in a string and returns a sentence expressing whether the string is a palindrome. A palindrome is the same word spelled forward and backwards.
