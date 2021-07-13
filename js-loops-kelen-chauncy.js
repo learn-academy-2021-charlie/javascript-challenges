@@ -72,9 +72,17 @@ console.log("--------------------------------------------------")
 // STRETCH Challenges
 // Even or Odd: Write a for loop that iterates from 0 to 15. For each iteration, it will check if the current number is odd or even, and display the appropriate outcome. Expected output --> "0 is even" "1 is odd" "2 is even" ...etc
 //
+let numbersArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12, 13, 14, 15]
+numbersArray.forEach(e => {
+   (e%2 == 0) ? console.log(`${e} is even`) : console.log(`${e} is odd`)
+})
+// numbersArray.map((num) => {
+//   (num%2 == 0) ? console.log(`${num} is even`) : console.log(`${num} is odd`)
+// })
 for(let i = 0; i<=15; i++){
-  if(i%2 == 0){ console.log(`${i} is even`)}
-  if(i%2 !== 0){ console.log(`${i} is odd`)}
+  (i%2 == 0) ? console.log(`${i} is even`) : console.log(`${i} is odd`)
+  // if(i%2 == 0){ console.log(`${i} is even`)}
+  // if(i%2 !== 0){ console.log(`${i} is odd`)}
 }
 //
 // Fizz Buzz: Use a for loop to log all numbers from 1-100. If a number is a multiple of 3, replace it with the word fizz. If a number is a multiple of five,
@@ -82,12 +90,12 @@ for(let i = 0; i<=15; i++){
 // 8, "fizz", "buzz", 11, "fizz", 13, 14, "fizzbuzz" ...etc
 //
 
-for(let i = 0; i <= 100; i++){
-  if(i%15 != 0){
-    if(i%3==0){
-      console.log('fizz')
-    }else if(i%5==0){
-      console.log('buzz')
-    } else {console.log(i)}
-  } else {console.log('fizzbuzz')}
-}
+// for(let i = 0; i <= 100; i++){
+//   if(i%15 != 0){
+//     if(i%3==0){
+//       console.log('fizz')
+//     }else if(i%5==0){
+//       console.log('buzz')
+//     } else {console.log(i)}
+//   } else {console.log('fizzbuzz')}
+// }
