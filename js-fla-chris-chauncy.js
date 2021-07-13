@@ -114,17 +114,18 @@ var arr2 = [7, 8, 2, 3, 1, 5, 4]
 // --> [3, 7, 10, 5, 4, 8, 2, 1]
 
 const noDups = (arr1, arr2) => {
-    let newArr = []
-    
-    newArr = arr1.concat(arr2)
-    //create a for loop 
-    //hold on to the 1st and then check the rest elements to see if there is a duplicate 
-    //if there is a dup. then slice() it out
-    //keep checking until end to remove duplicates
+    let temp = []
+    let newArr = arr1.concat(arr2)
 
-    //then repeat for each element
-
-    return newArr
+    for(let i = 0; i < newArr.length; i++)
+    {
+        // console.log("just I: " + newArr[i])
+        // console.log("index of: " + newArr.indexOf(newArr[i]))
+        if((i === newArr.indexOf(newArr[i]))){
+            temp.push(newArr[i])
+        }
+    }
+    return temp
 }
 
 console.log(noDups(arr1, arr2))
