@@ -38,13 +38,38 @@ console.log(oddNumbs(testArr2))
 // Expected output --> [-7, 3, 5, 13]
 //
 // Write a function that takes in a string and returns a new string with every letter capitalized. HINT: you do not need arrays or loops.
-// var myMessage = "Hello There"
-//
+var myMessage = "Hello There"
+// make a function -- everyLetter
+// the function will take a string as an argument. 
+// use the built in method toUpperCase() to capitalize all letter in the string
+// we
+const everyLetter = (anything) => {
+  return anything.toUpperCase()
+}
+
+console.log(everyLetter(myMessage))
+
 // Expected output --> "HELLO THERE"
 //
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method
-// var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
-//
+// declare a function that takes an array as an argument
+// declare an empty array - lettersArray
+// iterate through the array
+// use conditions to check if element in array is a letter (string)
+// push letter (string elements) to emtpy array
+// we JOIN it to make it one string!!!
+var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+
+const makeAstring = (arr) => {
+  let lettersArray = []
+  for (let i = 0; i < arr.length; i++){
+    if (typeof arr[i] === 'string') {
+      lettersArray.push(arr[i])
+    }
+  }
+  return lettersArray.join('');
+}
+console.log(makeAstring(comboArr))
 // Expected output --> "nicework"
 //
 // Create a function that returns the highest number
