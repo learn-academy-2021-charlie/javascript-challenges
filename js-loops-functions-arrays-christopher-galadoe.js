@@ -50,15 +50,15 @@ console.log(addArr(addThese2));
 
 // Create a function that takes in an array of numbers and returns the index of the largest number.
 
-var indexHighestNumbers = [1, 4, 2, 3]
+var indexHighestNumbers = [1, 4, 2, 3, 13]
 
 const highestIndex = (array) => {
-    let largestNum = 0
+    let largestNum = array[0]
     for (let i=0; i<array.length; i++) {
         if(array[i] > largestNum) {
             largestNum = array[i]
         }
     }
-    return largestNum.indexOf()
+    return array.indexOf(largestNum)
 }
 console.log(highestIndex(indexHighestNumbers));
