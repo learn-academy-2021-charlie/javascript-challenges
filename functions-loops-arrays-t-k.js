@@ -6,7 +6,7 @@
 //    let newArray = []
 //    for(let i = 0; i < arr.length; i++){
 //        newArray.push(arr[i] * 3)
-//    } 
+//    }
 //    return newArray
 // }
 // console.log(timesThree(testArr1));
@@ -40,7 +40,7 @@
 //           string = string.concat(arr[i])        }
 //     }
 //     return string
-    
+
 // }
 // console.log(stringsFromArray(comboArr));
 
@@ -68,8 +68,8 @@
 // // --> 1
 
 const returnIndex = (arr) => {
-    let number = 0 
-    let index 
+    let number = 0
+    let index
     for(let i = 0; i < arr.length; i++){
         if(arr[i] > number){
             number = arr[i]
@@ -87,36 +87,90 @@ console.log(returnIndex(indexHighestNumber));
 // STRETCH Challenges
 
 // Create a function that takes in a string and returns a sentence expressing whether the string is a palindrome. A palindrome is the same word spelled forward and backwards.
-// var isPalindrome1 = "racecar"
+var isPalindrome1 = "racecar"
 // // --> "Yes, racecar is a palindrome."
+
+const palindromeChecker = (str) => {
+  let array = str.split('')
+  array = array.reverse().join('')
+  return array == str
+    ? `${str} is a palindrome`
+    : `${str} is not a palindrome`
+}
+console.log(palindromeChecker(isPalindrome1))
 
 // var isPalindrome2 = "albatross"
 // // --> "No, albatross is not a palindrome."
 // Create a function that takes in two arrays and returns one array with no duplicate values.
-// var arr1 = [3, 7, 10, 5, 4, 3, 3]
-// var arr2 = [7, 8, 2, 3, 1, 5, 4]
+var arr1 = [3, 7, 10, 5, 4, 3, 3]
+var arr2 = [7, 8, 2, 3, 1, 5, 4]
 // // --> [3, 7, 10, 5, 4, 8, 2, 1]
+//
+//
+const arrayJoiner = (arr1, arr2) => {
+  let newArray = []
+  for(let i = 0; i<arr1.length; i++){
+    if(!newArray.includes(arr1[i])){newArray.push(arr1[i])}
+  }
+  for(let j = 0; j<arr1.length; j++){
+    if(!newArray.includes(arr2[j])){newArray.push(arr2[j])}
+  }
+  return newArray
+}
+
+console.log(arrayJoiner(arr1, arr2))
+
+
 // Create a function that takes in an array and returns an array without any false, null, 0 or blank values.
-// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+ var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
 // // --> [58, "abcd", true]
+
+const falseyChecker = (arr) => {
+  let array = []
+  for(let i = 0; i<arr.length; i++){
+    arr[i] && array.push(arr[i])
+  }
+  return array
+}
+console.log(falseyChecker(filterArrayValues))
+//
 // Create a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
 // var arrayLength = 6
 // var arrayValue = 0
 // // --> [0, 0, 0, 0, 0, 0]
+const lengthValue = (len, val) => {
+  let array = []
+  for(let i = 0; i<len; i++){
+    array.push(val)
+  }
+  return array
+}
 
-// var arrayLength = 4
-// var arrayValue = 11
+
+var arrayLength = 4
+var arrayValue = 11
+console.log(lengthValue(arrayLength, arrayValue))
 // // --> [11, 11, 11, 11]
 // Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
-// var addUp1 = 4
+var addUp1 = 4
 // // 1 + 2 + 3 + 4 = 10
 // // --> 10
 
-// var addUp2 = 10
+const adding = num => {
+  let sum = 0
+  for(let i=0; i<=num; i++){
+    sum += i
+  }
+  return sum
+}
+
+
+ var addUp2 = 10
+var addUp3 = 600
+console.log(adding(addUp3))
 // // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
 // // --> 55
 
-// var addUp3 = 600
 // // --> 180300
 // EPIC Challenges
 
