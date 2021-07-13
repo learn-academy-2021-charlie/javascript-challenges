@@ -113,7 +113,7 @@ var arr1 = [3, 7, 10, 5, 4, 3, 3]
 var arr2 = [7, 8, 2, 3, 1, 5, 4]
 // --> [3, 7, 10, 5, 4, 8, 2, 1]
 
-const combineArrays = (arr1, arr2) => {
+const noDups = (arr1, arr2) => {
     let newArr = []
     
     newArr = arr1.concat(arr2)
@@ -127,27 +127,65 @@ const combineArrays = (arr1, arr2) => {
     return newArr
 }
 
-console.log(combineArrays(arr1, arr2))
+console.log(noDups(arr1, arr2))
 
 // Create a function that takes in an array and returns an array without any false, null, 0 or blank values.
-// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
-// // --> [58, "abcd", true]
+var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+//--> [58, "abcd", true]
+
+const cleanArray = (array) => {
+    let blankArray = []
+    for(let i = 0; i < array.length; i++){
+        if(!(array[i] === false || array[i] === null || array[i] === 0 || array[i] === " ")){
+            blankArray.push(array[i])
+        }
+    }
+    return blankArray;
+}
+console.log(cleanArray(filterArrayValues))
+
+
 // Create a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
-// var arrayLength = 6
-// var arrayValue = 0
-// // --> [0, 0, 0, 0, 0, 0]
+var arrayLength = 6
+var arrayValue = 0
+// --> [0, 0, 0, 0, 0, 0]
 
-// var arrayLength = 4
-// var arrayValue = 11
+var arrayLength2 = 4
+var arrayValue2 = 11
 // // --> [11, 11, 11, 11]
+const wonky = (length, value) => {
+    let array = []
+    for(let i = 0; i < length; i++)
+    {
+        array[i] = value;
+    }
+    return array
+}
+
+
+console.log(wonky(arrayLength, arrayValue))
+console.log(wonky(arrayLength2, arrayValue2))
+
 // Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
-// var addUp1 = 4
-// // 1 + 2 + 3 + 4 = 10
-// // --> 10
+var addUp1 = 4
+//1 + 2 + 3 + 4 = 10
+// --> 10
 
-// var addUp2 = 10
-// // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
-// // --> 55
+var addUp2 = 10
+//1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+//--> 55
 
-// var addUp3 = 600
-// // --> 180300
+ var addUp3 = 600
+// --> 180300
+
+const addItUp = (num) => {
+    let sum = 0;
+    for(i = 1; i <= num; i++)
+    {
+        sum += i;
+    }
+    return sum;
+}
+console.log(addItUp(addUp1))
+console.log(addItUp(addUp2))
+console.log(addItUp(addUp3))
