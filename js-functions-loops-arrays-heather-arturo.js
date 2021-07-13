@@ -56,15 +56,47 @@
 
 // Create a function that takes in an array of numbers and returns the index of the largest number.
 // var indexHighestNumber = [1, 4, 2, 3]
-// // --> 1
+// // // --> 1
+// const indexOfLargestNum = (array) => {
+//   let emptyNum = 0
+//   for (i=0; i<array.length; i++){
+//     if (array[i] > emptyNum) {
+//       emptyNum = array[i]
+//     }
+//   } return indexHighestNumber.indexOf(emptyNum)
+// }
+// console.log(indexOfLargestNum(indexHighestNumber))
+
+
 // STRETCH Challenges
 //
 // Create a function that takes in a string and returns a sentence expressing whether the string is a palindrome. A palindrome is the same word spelled forward and backwards.
-// var isPalindrome1 = "racecar"
-// // --> "Yes, racecar is a palindrome."
-//
-// var isPalindrome2 = "albatross"
+var isPalindrome1 = "racecar"
+// // // --> "Yes, racecar is a palindrome."
+// //
+var isPalindrome2 = "albatross"
 // // --> "No, albatross is not a palindrome."
+// const palindrome = (string) => {
+//   let emptyArray = []
+//     for (i=0; i<string.length; i++) {
+//       if (string[0] === string.lastIndexOf()) {
+//         console.log('${string} is a palindrome')
+//       }
+//       else {console.log('${string} is not a palindrome')}
+//     }
+// }
+const palindrome = (string) => {
+  let newString = string.split("")
+  let reverseString = newString.reverse()
+  let finalString = reverseString.join("")
+    if (finalString === string) {
+      return ('${string} is a palindrome')}
+    else {return ('${string} is not a palindrome')}
+}
+
+console.log(palindrome(isPalindrome1))
+console.log(palindrome(isPalindrome2))
+
 // Create a function that takes in two arrays and returns one array with no duplicate values.
 // var arr1 = [3, 7, 10, 5, 4, 3, 3]
 // var arr2 = [7, 8, 2, 3, 1, 5, 4]
