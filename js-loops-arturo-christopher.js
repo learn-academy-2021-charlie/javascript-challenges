@@ -36,7 +36,7 @@
 
 // Create a loop that will log the remainder of each number when divided by 2. Expected output --> 1, 1, -1, 0, 1
 //  for (i=0; i<nums.length ; i++) {
-//    console.log(nums[i] % 2) 
+//    console.log(nums[i] % 2)
 //  }
 
 //  Even or Odd: Write a for loop that iterates from 0 to 15. For each iteration, it will check if the current number is odd or even, and display the appropriate outcome. Expected output --> "0 is even" "1 is odd" "2 is even" ...etc
@@ -50,8 +50,8 @@
 // }
 
 // Fizz Buzz: Use a for loop to log all numbers from 1-100. If a number is a multiple of 3, replace it with the word fizz. If a number is a multiple of five, replace it with the word buzz. If a number is a multiple of both 3 and 5, replace it with fizzbuzz. Expected output --> 1, 2, "fizz", 4, "buzz", "fizz", 7, 8, "fizz", "buzz", 11, "fizz", 13, 14, "fizzbuzz" ...etc
-
-for(i=1; i<101; i++) {
+const fizzFunction = () => {
+  for(i=1; i<101; i++) {
     if(i % 3 === 0 && i % 5 === 0) {
         console.log("fizzbuzz");
     } else if(i % 3 === 0) {
@@ -59,4 +59,5 @@ for(i=1; i<101; i++) {
     } else {
         console.log(i);
     }
-}
+}}
+console.log(fizzFunction())
